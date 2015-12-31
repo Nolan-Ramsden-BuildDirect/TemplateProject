@@ -1,0 +1,31 @@
+﻿<TemplateData>
+  <Name>BuildDirect Service template</Name>
+  <Description>Build Direct Service Template</Description>
+  <ProjectType>CSharp</ProjectType>
+  <ProjectSubType>
+  </ProjectSubType>
+  <SortOrder>1000</SortOrder>
+  <CreateNewFolder>true</CreateNewFolder>
+  <DefaultName>BDService</DefaultName>
+  <ProvideDefaultName>true</ProvideDefaultName>
+  <LocationField>Enabled</LocationField>
+  <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  <Icon>http://www.builddirect.com/images/builddirect.png</Icon>
+</TemplateData>
+<TemplateContent>
+  <ProjectCollection>
+    <ProjectTemplateLink ProjectName="$projectname$.Data">
+      WebApiTemplate.Data\MyTemplate.vstemplate
+    </ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Service">
+      WebApiTemplate.Service\MyTemplate.vstemplate
+    </ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Repository">
+      WebApiTemplate.Configuration\MyTemplate.vstemplate
+    </ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Services">
+      WebApiTemplate\MyTemplate.vstemplate
+    </ProjectTemplateLink>
+  </ProjectCollection>
+</TemplateContent>
+</VSTemplate>
